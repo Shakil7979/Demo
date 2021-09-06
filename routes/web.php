@@ -2,9 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
- Route::get('/','siteController@home');
+ Route::get('/','myController');
 
- Route::get('/about','siteController@about');
+ Route::resource('photos','photoController');
 
- Route::get('/contact','siteController@contact');
- 
+ Route::get('/mySelf','homeController@mySelf');
